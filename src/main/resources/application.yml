@@ -16,8 +16,9 @@ spring:
           uri: 'https://github.com/hyeon48615/project-configs.git'
           default-label: main
           search-paths:
-            - configs
-            - configs/*
+            - configs/common
+            - configs/{application}/{profile}
+            - configs/{application}
           basedir: configs_cache
           clone-on-start: true
 
